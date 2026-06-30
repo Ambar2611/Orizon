@@ -61,7 +61,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Floating futuristic elements */}
-          <div className="absolute top-1/4 right-[10%] hidden lg:block opacity-50">
+          <div className="absolute top-[10%] md:top-1/4 right-[2%] md:right-[10%] opacity-30 md:opacity-50 scale-75 md:scale-100 origin-right pointer-events-none">
             <motion.div
               animate={{ y: [0, -20, 0], rotate: [0, 5, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
@@ -77,7 +77,7 @@ export default function Hero() {
             </motion.div>
           </div>
           
-          <div className="absolute bottom-1/4 left-[10%] hidden lg:block opacity-50">
+          <div className="absolute bottom-[15%] md:bottom-1/4 left-[2%] md:left-[10%] opacity-30 md:opacity-50 scale-75 md:scale-100 origin-left pointer-events-none">
             <motion.div
               animate={{ y: [0, 20, 0], rotate: [0, -5, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
